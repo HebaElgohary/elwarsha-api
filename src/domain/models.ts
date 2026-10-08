@@ -51,6 +51,7 @@ export type Engagement = {
 export type Label = {
   id: string;
   name: string;
+   createdAt: Date;
 };
 
 export type Assignment = {
