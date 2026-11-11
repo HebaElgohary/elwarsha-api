@@ -11,6 +11,7 @@ import { ApplicationsModule } from "./modules/applications/applications.module.j
 import { TasksModule } from "./modules/tasks/tasks.module.js";
 import { LabelsModule } from './modules/labels/labels.module.js';
 import { WeeksModule } from "./modules/weeks/weeks.module.js";
+import { SubmissionsModule } from './modules/submissions/submissions.module.js';
 
 @Module({
   imports: [
@@ -25,6 +26,7 @@ import { WeeksModule } from "./modules/weeks/weeks.module.js";
     GithubModule,
     LabelsModule,
     WeeksModule,
+    SubmissionsModule,
   ],
 })
 export class AppModule {}

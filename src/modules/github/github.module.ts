@@ -14,8 +14,8 @@ import { GithubService } from "./github.service.js";
     GithubService,
     {
       provide: "GithubAppClient",
-      useFactory: (env: AppEnv) => new FakeGithubAppClient(env),
-      inject: [APP_ENV],
+      useFactory: (env: AppEnv) => new FakeGithubAppClient(env), //nest passes APP_ENV as arg to factory cb
+      inject: [APP_ENV],    //nest get dependency APP_ENV
     },
   ],
   exports: [GithubService],

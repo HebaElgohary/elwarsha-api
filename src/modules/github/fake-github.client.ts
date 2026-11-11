@@ -102,6 +102,7 @@ export class FakeGithubAppClient implements GithubAppClient {
     return this.pullRequests.filter((pr) => pr.htmlUrl.toLowerCase().includes(target));
   }
 
+
   setPullRequests(pullRequests: NormalizedPullRequestSummary[]): void {
     this.pullRequests = pullRequests;
   }
